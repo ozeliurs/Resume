@@ -1,7 +1,8 @@
 name: Compile Latex and Release PDF
 
-
 on: push
+
+permissions: write-all
 
 jobs:
   build_latex:
