@@ -1,6 +1,17 @@
 name: Compile Latex and Release PDF
 
-on: release
+on:
+  push:
+    tags:
+      - '*'
+  release:
+    types:
+      - created
+      - published
+      - edited
+      - deleted
+      - prereleased
+      - released
 
 permissions: write-all
 
