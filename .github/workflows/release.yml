@@ -28,7 +28,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: main
-          path: main.pdf
+          path: src/main.pdf
+          if-no-files-found: error
 
   release:
     name: Release
