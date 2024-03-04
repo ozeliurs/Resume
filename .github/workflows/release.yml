@@ -21,8 +21,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: src/main.tex
-          docker_image: ghcr.io/xu-cheng/texlive-full:latest
+          working_directory: src
+          root_file: main.tex
 
       - name: Upload PDF
         uses: actions/upload-artifact@v2
