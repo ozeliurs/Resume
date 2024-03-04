@@ -3,10 +3,16 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "mv main.pdf 'Maxime BILLY Resume - v${nextRelease.version}.pdf'"
+      }
+    ],
+    [
       "@semantic-release/github",
       {
         "assets": [
-          { "path": "main.pdf", "label": "Ozeliurs' Updated Resume" }
+          { "path": "Maxime BILLY Resume - v${nextRelease.version}.pdf" }
         ]
       }
     ]
