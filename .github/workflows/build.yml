@@ -1,9 +1,6 @@
 name: Compile Latex and Release PDF
 
-on:
-  release:
-    types:
-      - created
+on: release
 
 permissions: write-all
 
