@@ -25,7 +25,7 @@ jobs:
           root_file: main.tex
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: main
           path: src/main.pdf
@@ -49,7 +49,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download PDF
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: main
           path: .
